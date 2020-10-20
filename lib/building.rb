@@ -1,7 +1,9 @@
+require './lib/apartment'
+require './lib/renter'
+
 class Building
 
-  attr_reader :units,
-              :renters
+  attr_reader :units, :renters
 
   def initialize
     @units = []
@@ -10,5 +12,9 @@ class Building
 
   def add_unit(unit)
     @units << unit
+  end
+
+  def renters(renter)
+    @renters << renter
   end
 end
