@@ -21,4 +21,8 @@ class BuildingTest < Minitest::Test
     @building.add_unit(@unit2)
     assert_equal [@unit1, @unit2], @building.units
   end
+
+  def test_renters_start_empty
+    assert_equal [], @building.renters
+  end
 end
