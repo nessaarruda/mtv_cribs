@@ -1,7 +1,7 @@
 class Building
 
   attr_reader :units,
-              :renters 
+              :renters
 
   def initialize
     @units = []
