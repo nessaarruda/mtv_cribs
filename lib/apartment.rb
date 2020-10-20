@@ -13,4 +13,6 @@ class Apartment
     @bedrooms = bedrooms
     @renter = renter
   end
+
+
 end
