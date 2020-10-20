@@ -17,4 +17,12 @@ class Building
   def renters(renter)
     @renters << renter
   end
+
+  def average_rent
+    require "pry"; binding.pry
+    @units.sum do |unit|
+      unit.monthly_rent
+    end
+  end
+
 end
